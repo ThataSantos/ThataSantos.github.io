@@ -14,6 +14,10 @@
             color: orchid;
         }
 
+        main {
+            height: 70vh;
+        }
+
         nav a :hover {
             color: blueviolet;
         }
@@ -24,6 +28,20 @@
 
         nav ul li :hover {
             background-color: fuchsia;
+        }
+
+        #limpar {
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 2px;
+        }
+
+        #enviar {
+            background-color: lightskyblue;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 2px;
         }
     </style>
 </head>
@@ -38,11 +56,30 @@
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/cv.html">Curriculo</a></li>
             <li><a href="/contato.html">Contato</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/thabatasantos">LinkedIn</a></li>
         </ul>
     </nav>
     <main>
         <h2>Entre em conato comigo!</h2>
-        
+        <form action="mailto:thata_santoss@hotmail.com?subject=subject=Contato via site pessoal" method="post"
+            enctype="text/plain">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome:" required>
+            <br>
+            <label for="telfone">Telefone: </label>
+            <input type="tel" telefone="telefone" id="telefone" placeholder="Insira o telefone" required>
+            <br>
+            <label for="assunto">Assunto: </label>
+            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+            <br>
+            <input type="reset" value="Resetar">
+            <input type="submit" value="Enviar">
+            <hr />
+            <a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=thata_santoss@hotmail.com&su=Contato+-+via+site+pessoal&body=Ol%C3%A1+Thabata+Tudo+bem?&tf=cm">Prefere
+                gmail?</a>
+
+        </form>
 
     </main>
 
