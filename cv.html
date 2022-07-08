@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
     <link rel="stylesheet" href="/css/site.css">
     <style>
@@ -13,6 +15,23 @@
         main ul {
 
             list-style: none;
+        }
+
+        .cursos {
+            grid-area: cursos;
+        }
+
+        .complementar {
+            grid-area: complementar;
+        }
+
+        .grid-academico {
+            display: grid;
+            margin: 0 auto;
+            border: 1px solid lightsalmon;
+            gap: 4px;
+            grid-template-areas:
+                "cursos complementar";
         }
     </style>
 </head>
@@ -33,61 +52,111 @@
     <main>
         <h2>Thabata Santos</h2>
         <br />
-        <p>Bacharel em Administração, Especialista em Administração Estratégica.Tenho experiência em rotinas administrativas, 
+        <p>Bacharel em Administração, Especialista em Administração Estratégica.Tenho experiência em rotinas
+            administrativas,
             controle de estoque,atendimento ao público. </p>
         <p>No moneto estou aprendendo programção Java Web.</p>
-            <br/>
-        <h3><i>Fomação Acadêmica</i> </h3>
-        <ul>
-            <li>Proway - Entra21Blusoft
-                <ul> 
-                    <li> Java, Angular e Banco de Dados · (abril de 2022 - outubro de 2022)</li>
-                </ul>
-            </li>
-            <br />
-            <li>UNIASSELVI
+        <br />
+        <section class="grid-academico">
+            <section class="item cursos">
+                <h3><i>Fomação Acadêmica</i> </h3>
                 <ul>
-                    <li>Pós graduação MBA, Coaching · (2018 - 2020)</li>
+                    <li>Proway - Entra21Blusoft
+                        <ul>
+                            <li> Java, Angular e Banco de Dados · (abril de 2022 - outubro de 2022)</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>UNIASSELVI
+                        <ul>
+                            <li>Pós graduação MBA, Coaching · (2018 - 2020)</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li> UNIASSELVI
+                        <ul>
+                            <li>Pós graduação, Administração Estratégica · (2018 - 2019)</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>UNIASSELVI
+                        <ul>
+                            <li> Bacharelado em Administração, Administração de Empresas · (2014 - 2017)</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>Microcamp
+                        <ul>
+                            <li> Web design Developer · (março de 2011 - março de 2013)</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <br />
-            <li> UNIASSELVI
+                <br />
+                <h3><i>Idiomas</i></h3>
                 <ul>
-                    <li>Pós graduação, Administração Estratégica · (2018 - 2019)</li>
+                    <li>Chinês (Elementary)</li>
+                    <li>Inglês (Limited Working)</li>
                 </ul>
-            </li>
-            <br />
-            <li>UNIASSELVI
-                <ul>
-                    <li> Bacharelado em Administração, Administração de Empresas · (2014 - 2017)</li>
-                </ul>
-            </li>
-            <br />
-            <li>Microcamp
-                <ul>
-                    <li> Web design Developer · (março de 2011 - março de 2013)</li>
-                </ul>
-            </li>
-        </ul>
-        <br/>
-        <h3><i>Principais competências</i></h3>
-        <ul>
-            <li>GestãoGestão</li>
-            <li>Planejamento estratégico</li>
-            <li>Pacote Office</li>
-        </ul>
-        <br/>
-        <h3><i>Idiomas</i></h3>
-        <ul>
-            <li>Chinês (Elementary)</li>
-            <li>Inglês (Limited Working)</li>
-        </ul>
-        <br/>
+            </section>
+            <section class="item complementar">
+                <li style="list-style: none;">
+                    <table border="1" style="border:1px solid violet ;">
+                        <thead>
+                            <h3><i>Principais competências</i></h3>
+                        </thead>
+                        <tbody style="text-align:center">
+                            <tr>
+                                <td>👨🏻‍💻</td>
+                                <td>Backend</td>
+                                <td>
+                                    <img src="https://img.shields.io/badge/-Java-black?style=flat&logo=Java" alt=Java"">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>👁‍🗨</td>
+                                <td>Frontend</td>
+                                <td>
+                                    <img src="https://img.shields.io/badge/-HTML-black?style=flat&logo=HTML5"
+                                        alt="HTML">
+                                    <img src="https://img.shields.io/badge/-CSS-black?style=flat&logo=CSS3&logoColor=1572B6"
+                                        alt="CSS">
+                                    <img src="https://img.shields.io/badge/-Markdown-black?style=flat&logo=markdown"
+                                        alt="Markdown">
+                                    <img src="https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript"
+                                        alt="JavaScript">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>🪑🎲</td>
+                                <td>Database</td>
+                                <td>
+                                    <img src="https://img.shields.io/badge/-MySql-black?style=flat&logo=mysql"
+                                        alt="MySql">
+                                    <img src="https://img.shields.io/badge/-Sqlite-black?style=flat&logo=sqlite"
+                                        alt="Sqlite">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>🔧</td>
+                                <td>IDE</td>
+                                <td>
+                                    <img src="https://img.shields.io/badge/-Eclipse-black?style=flat&logo=eclipse-ide&logoColor=orange"
+                                        alt="Eclipse">
+                                        <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-black?style=flat&logo=visual-studio-code&logoColor=007ACC" alt="Visual Studio
+                                    Code">
+                                </td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </li>
+            </section>
+        </section>
+        <br />
     </main>
     <footer>
         <br />
         <hr />
     </footer>
 </body>
-
 </html>
