@@ -1,93 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="/css/site.css">
-    <style>
-        html {
-            background-color: violet;
-        }
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="shortcut icon"
+        href="	https://lh3.googleusercontent.com/a-/AFdZucq-GvLW4IXoi469SJtgX_qeRq8oCwcTf0CJcyc9Cuw=s83-c-mo"
+        type="image/x-icon">
+    <title>Thabata</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.css.map">
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/main.css'>
 
-        nav a {
-            color: orchid;
-        }
-
-        main {
-            height: 70vh;
-        }
-
-        nav a :hover {
-            color: blueviolet;
-        }
-
-        nav ul {
-            background-color: lightpink;
-        }
-
-        nav ul li :hover {
-            background-color: fuchsia;
-        }
-
-        #limpar {
-            background-color: white;
-            border-radius: 4px;
-            border: 1px solid gray;
-            padding: 2px;
-        }
-
-        #enviar {
-            background-color: lightskyblue;
-            border-radius: 4px;
-            border: 1px solid gray;
-            padding: 2px;
-        }
-    </style>
 </head>
 
-<body>
-    <header>
-        <img src="/icons/phone-call.png" alt="">
-        <h1>Contato</h1>
+<body class="container pt-4 bg-dark">
+    <header class="row">
+        <section class="col">
+            <div class="card">
+                <div class="card-body">
+                    <section class="row align-middle">
+                        <div class="col-2">
+                            <img src="	https://avatars.githubusercontent.com/u/100490750?v=4" alt="perfil"
+                                class="w-100 rounded-circle img-thumbnail" />
+                        </div>
+                        <div class="col">
+                            <h1 class="display-4">Thabata Santos</h1>
+                            <hr />
+                            <a href="/index.htm" class="btn btn-outline-primary me-2">Início</a>
+                            <a href="/curriculo.html" class="btn btn-outline-primary me-2">Curriculo</a>
+                            <a href="/contato.html" class="btn btn-primary me-2">Contato</a>
+                            <a target="_blank" href="https://www.linkedin.com/in/thabatasantos"
+                                class="btn btn-outline-primary me-2">LinkedIn</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
     </header>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/cv.html">Curriculo</a></li>
-            <li><a href="/contato.html">Contato</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/thabatasantos">LinkedIn</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Entre em conato comigo!</h2>
-        <form action="mailto:thata_santoss@hotmail.com?subject=subject=Contato via site pessoal" method="post"
-            enctype="text/plain">
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Insira seu nome:" required>
-            <br>
-            <label for="telfone">Telefone: </label>
-            <input type="tel" telefone="telefone" id="telefone" placeholder="Insira o telefone" required>
-            <br>
-            <label for="assunto">Assunto: </label>
-            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-            <br>
-            <input type="reset" value="Resetar">
-            <input type="submit" value="Enviar">
-            <hr />
-            <a
-                href="https://mail.google.com/mail/u/0/?fs=1&to=thata_santoss@hotmail.com&su=Contato+-+via+site+pessoal&body=Ol%C3%A1+Thabata+Tudo+bem?&tf=cm">Prefere
-                gmail?</a>
+    <main class="row mt-2">
+        <section class="col">
+            <div class="card">
+                <div class="card-header">Contato</div>
+                <div class="card-body">
+                    <h2>Deixe sua mensagem, responderei em breve.</h2>
+                    <section class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">Fomulário</div>
+                                <form action="mailto:thata_santoss@hotmail.com?subject=subject=Contato via site pessoal"
+                                    method="post" enctype="text/plain">
+                                    <div class="card-body">
 
-        </form>
-
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">🙂</span>
+                                            <input type="text" class="form-control" placeholder="Insira seu nome"
+                                                name="nome" required>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">📞</span>
+                                            <input type="tel" class="form-control" placeholder="Insira o telefone"
+                                                name="telefone" required>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">📧</span>
+                                            <input type="email" class="form-control" placeholder="Insira seu email"
+                                                name="email" required>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">📝</span>
+                                            <input type="text" class="form-control" placeholder="Insira sua mensagem"
+                                                name="mensagem" required>
+                                        </div>
+                                                                                 
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="reset" class="btn btn-outline-primary">Limpar</button>
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-footer">
+                    <footer></footer>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <hr />
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/bootstrap.bundle.js.map"></script>
 </body>
 
 </html>
